@@ -134,7 +134,7 @@ def run_app():
             st.write(prediction_scores)
 
             predicted_class = prediction_scores.idxmax(axis=1)
-            st.write(predicted_class)
+            st.write(predicted_class[0])
             # st.write("Predicted Class:", prediction.idxmax(axis=1)[0])
 
 # if __name__ == '__main__':
