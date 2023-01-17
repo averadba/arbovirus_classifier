@@ -132,7 +132,7 @@ def run_app():
 
             prediction = predict_model(model, input_data, raw_score=True)
             prediction_scores = prediction[['Score_ChikV','Score_DengV','Score_Zika']]
-            prediction_scores.rename(columns={'Score_ChikV':'Chikungunya', 'Score_DengV':'Dengue', 'Score_Zika':'Zika'}, inplace=True, index=False)
+            prediction_scores.rename(columns={'Score_ChikV':'Chikungunya', 'Score_DengV':'Dengue', 'Score_Zika':'Zika'}, inplace=True)
             # prob_chik = prediction['Score_ChikV']
             # prob_deng = prediction['Score_DengV']
             # prob_zika = prediction['Score_Zika']
