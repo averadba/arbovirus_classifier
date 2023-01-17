@@ -130,8 +130,9 @@ def run_app():
             # st.write("Probabilities for each class:", prediction)
             # st.write("Predicted Class:", prediction.idxmax(axis=1)[0])
 
-            prediction = predict_model(model, input_data, proba=True)
-            st.write("Predicted Class:", prediction.idxmax(axis=1)[0])
+            prediction = predict_model(model, input_data, raw_score=True)
+            st.write(prediction)
+            # st.write("Predicted Class:", prediction.idxmax(axis=1)[0])
 
 # if __name__ == '__main__':
 run_app()
