@@ -131,10 +131,8 @@ def run_app():
             # st.write("Predicted Class:", prediction.idxmax(axis=1)[0])
 
             prediction = predict_model(model, input_data, raw_score=True)
-            st.write(prediction)
-
             prediction_scores = prediction[['Score_ChikV','Score_DengV','Score_Zika']]
-            prediction_scores.rename(columns={'Score_ChikV':'Chikungunya', 'Score_DengV':'Dengue', 'Score_Zika':'Zika'})
+            prediction_scores.rename(columns={'Score_ChikV':'Chikungunya', 'Score_DengV':'Dengue', 'Score_Zika':'Zika'}, inplace=True, index=False)
             # prob_chik = prediction['Score_ChikV']
             # prob_deng = prediction['Score_DengV']
             # prob_zika = prediction['Score_Zika']
