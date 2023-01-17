@@ -133,7 +133,7 @@ def run_app():
             st.write("The following are the probabilities for the individual to be classified as any of the three arboviral infections:")
             st.write(prediction_scores)
 
-            predicted_class = prediction_scores.idxmax()
+            predicted_class = prediction_scores.idxmax(axis=1)
             st.write(predicted_class)
             # st.write("Predicted Class:", prediction.idxmax(axis=1)[0])
 
