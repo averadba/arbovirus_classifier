@@ -132,6 +132,10 @@ def run_app():
 
             prediction = predict_model(model, input_data, raw_score=True)
             st.write(prediction)
+            prob_chik = prediction['Score_ChikV']
+            prob_deng = prediction['Score_DengV']
+            prob_zika = prediction['Score_Zika']
+            st.write(prob_chik)
             # st.write("Predicted Class:", prediction.idxmax(axis=1)[0])
 
 # if __name__ == '__main__':
