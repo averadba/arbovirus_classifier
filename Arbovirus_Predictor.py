@@ -124,18 +124,12 @@ def run_app():
         
         if st.button('Predict'):
             input_data = pd.DataFrame([input_data])
+            st.write("You entered the following values:")
             st.write(input_data)
-            # input_data = pd.DataFrame.from_dict(input_data, orient='index').T
-            # prediction = predict_model(model, data=input_data, raw_score=True)
-            # st.write("Probabilities for each class:", prediction)
-            # st.write("Predicted Class:", prediction.idxmax(axis=1)[0])
 
             prediction = predict_model(model, input_data, raw_score=True)
             prediction_scores = prediction[['Score_ChikV','Score_DengV','Score_Zika']]
             prediction_scores.rename(columns={'Score_ChikV':'Chikungunya', 'Score_DengV':'Dengue', 'Score_Zika':'Zika'}, inplace=True)
-            # prob_chik = prediction['Score_ChikV']
-            # prob_deng = prediction['Score_DengV']
-            # prob_zika = prediction['Score_Zika']
             st.write("The following are the probabilities for the individual to be classified as any of the three arboviral infections:")
             st.write(prediction_scores)
             # st.write("Predicted Class:", prediction.idxmax(axis=1)[0])
