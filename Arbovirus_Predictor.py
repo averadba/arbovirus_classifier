@@ -3,10 +3,6 @@ from pycaret.classification import predict_model
 from pycaret.classification import load_model
 import pandas as pd
 
-st.markdown(""" <style>
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
-</style> """, unsafe_allow_html=True)
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
