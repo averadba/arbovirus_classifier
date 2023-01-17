@@ -131,7 +131,7 @@ def run_app():
             # st.write("Predicted Class:", prediction.idxmax(axis=1)[0])
 
             prediction = predict_model(model, input_data, raw_score=True)
-            st.write("Predicted Class:", prediction.idxmax(axis=0)[0])
+            st.write("Predicted Class:", prediction.argmax(axis=1)[0])
 
 # if __name__ == '__main__':
 run_app()
