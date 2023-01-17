@@ -132,6 +132,9 @@ def run_app():
             prediction_scores.rename(columns={'Score_ChikV':'Chikungunya', 'Score_DengV':'Dengue', 'Score_Zika':'Zika'}, inplace=True)
             st.write("The following are the probabilities for the individual to be classified as any of the three arboviral infections:")
             st.write(prediction_scores)
+
+            predicted_class = prediction_scores.idxmax()
+            st.write(predicted_class)
             # st.write("Predicted Class:", prediction.idxmax(axis=1)[0])
 
 # if __name__ == '__main__':
