@@ -16,6 +16,7 @@ def predict(model, input_data):
 def run_app():
     st.set_page_config(page_title="Arboviral Infection Classification", page_icon=":guardsman:", layout="wide")
     st.title("Arboviral Infection Classification App")
+    st.write("*By:* A. Vera")
 
     # create a menu with options for instructions and prediction
     menu = ["Instructions", "Prediction"]
