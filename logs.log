@@ -1464,3 +1464,41 @@
                  GradientBoostingClassifier(random_state=5124)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=True, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
 2023-01-17 20:40:27,366:INFO:Checking exceptions
 2023-01-17 20:40:27,367:INFO:Preloading libraries
+2023-01-17 20:42:02,168:INFO:Initializing load_model()
+2023-01-17 20:42:02,169:INFO:load_model(model_name=gbc_model_jan2023, platform=None, authentication=None, verbose=True)
+2023-01-17 20:42:05,849:INFO:Initializing load_model()
+2023-01-17 20:42:05,850:INFO:load_model(model_name=gbc_model_jan2023, platform=None, authentication=None, verbose=True)
+2023-01-17 20:42:08,188:INFO:Initializing load_model()
+2023-01-17 20:42:08,189:INFO:load_model(model_name=gbc_model_jan2023, platform=None, authentication=None, verbose=True)
+2023-01-17 20:42:10,026:INFO:Initializing load_model()
+2023-01-17 20:42:10,026:INFO:load_model(model_name=gbc_model_jan2023, platform=None, authentication=None, verbose=True)
+2023-01-17 20:42:11,840:INFO:Initializing load_model()
+2023-01-17 20:42:11,840:INFO:load_model(model_name=gbc_model_jan2023, platform=None, authentication=None, verbose=True)
+2023-01-17 20:42:14,396:INFO:Initializing load_model()
+2023-01-17 20:42:14,396:INFO:load_model(model_name=gbc_model_jan2023, platform=None, authentication=None, verbose=True)
+2023-01-17 20:42:14,459:INFO:Initializing predict_model()
+2023-01-17 20:42:14,459:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(features_todrop=['Hemm'],
+                                      ml_usecase='classification',
+                                      target='Confirmed.Diagnosis')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='Confirmed.Diagnosis')),
+                ('fix_perfect', Remove_100(target='Confirmed.Diagnosis')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 GradientBoostingClassifier(random_state=5124)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=True, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2023-01-17 20:42:14,460:INFO:Checking exceptions
+2023-01-17 20:42:14,461:INFO:Preloading libraries
+2023-01-17 20:42:45,286:INFO:Initializing load_model()
+2023-01-17 20:42:45,286:INFO:load_model(model_name=gbc_model_jan2023, platform=None, authentication=None, verbose=True)

@@ -1,1 +1,3 @@
-pycaret
+pandas==1.5.2
+pycaret==2.3.10
+streamlit==1.17.0
