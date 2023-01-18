@@ -4,7 +4,6 @@ from pycaret.classification import load_model
 import pandas as pd
 
 
-st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # load the PyCaret model
 model = load_model('gbc_model_jan2023')
@@ -142,3 +141,10 @@ def run_app():
 
 # if __name__ == '__main__':
 run_app()
+
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
